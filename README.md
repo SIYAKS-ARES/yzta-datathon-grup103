@@ -60,12 +60,14 @@ pip install -r requirements.txt
 Projeyi kendi ortamınızda çalıştırmak için:
 
 1. Bu repository'yi klonlayın:
+
    ```bash
    git clone https://github.com/kullanici-adi/yzta-datathon-grup103.git
    cd yzta-datathon-grup103
    ```
 
 2. Gereksinimleri yükleyin:
+
    ```bash
    pip install -r requirements.txt
    ```
@@ -76,6 +78,7 @@ Projeyi kendi ortamınızda çalıştırmak için:
    - usd_clean.csv
 
 4. Jupyter Notebook dosyasını (`grup-103.ipynb`) çalıştırın:
+
    ```bash
    jupyter notebook grup-103.ipynb
    ```
