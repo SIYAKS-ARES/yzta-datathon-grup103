@@ -45,23 +45,42 @@ Model performansını artırmak için Keras Tuner kullanıldı:
 
 En iyi modelimiz, USD/TRY döviz kuru verilerini de dahil ederek oluşturulmuş ve bunu sonuç dosyasına yansıtılmıştır. Elde edilen sonuçlar `en-iyi-sonuc-4.6025400670.csv` dosyasında saklanmaktadır. Dosya adından anlaşılacağı üzere, modelin hata skoru (RMSE) 4.60254 olarak hesaplanmıştır.
 
-## Kullanım Talimatları
+## Kurulum ve Kullanım
+
+### Gereksinimler
+
+Projeyi çalıştırmak için gerekli kütüphaneler `requirements.txt` dosyasında belirtilmiştir. Gerekli kütüphaneleri yüklemek için:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Kullanım Talimatları
 
 Projeyi kendi ortamınızda çalıştırmak için:
 
-1. Gerekli kütüphaneleri yükleyin:
-   ```
-   pip install numpy pandas scikit-learn matplotlib tensorflow keras-tuner
+1. Bu repository'yi klonlayın:
+   ```bash
+   git clone https://github.com/kullanici-adi/yzta-datathon-grup103.git
+   cd yzta-datathon-grup103
    ```
 
-2. Veri setlerini temin edin:
+2. Gereksinimleri yükleyin:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Veri setlerini temin edin:
    - train.csv
    - testFeatures.csv
    - usd_clean.csv
 
-3. Jupyter Notebook dosyasını (`grup-103.ipynb`) çalıştırın.
+4. Jupyter Notebook dosyasını (`grup-103.ipynb`) çalıştırın:
+   ```bash
+   jupyter notebook grup-103.ipynb
+   ```
 
-4. Notebook içerisindeki hücreleri sırasıyla çalıştırarak modelin eğitimini ve tahminleri gerçekleştirin.
+5. Notebook içerisindeki hücreleri sırasıyla çalıştırarak modelin eğitimini ve tahminleri gerçekleştirin.
 
 ## Model Özellikleri
 
@@ -71,9 +90,31 @@ Projeyi kendi ortamınızda çalıştırmak için:
 - **Hiperparametre Optimizasyonu**: Keras Tuner ile optimal model mimarisi bulundu
 - **Erken Durdurma**: Aşırı uyumu (overfitting) önlemek için EarlyStopping kullanıldı
 
+## Dosya Yapısı
+
+```
+yzta-datathon-grup103/
+├── README.md               # Proje açıklaması
+├── LICENSE                 # MIT Lisansı
+├── requirements.txt        # Gerekli kütüphaneler
+├── grup-103.ipynb          # Ana notebook dosyası
+├── usd_clean.csv           # USD/TRY kur verileri
+├── sample_submission.csv   # Örnek submission dosyası
+└── en-iyi-sonuc-4.6025400670.csv # En iyi tahmin sonuçları
+```
+
 ## Grup Üyeleri
 
-YZTA Datathon 2024 Grup 103 ekibi tarafından geliştirilmiştir.
+YZTA Datathon 2024 Grup 103 ekibi üyeleri:
+
+- Mehmet Said Hüseyinoğlu
+- Kadir Akyürek
+- Eda Nur Işık
+- Medine
+
+## Lisans
+
+Bu proje MIT lisansı altında lisanslanmıştır. Daha fazla bilgi için [LICENSE](LICENSE) dosyasına bakınız.
 
 ---
 
