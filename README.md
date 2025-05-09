@@ -113,7 +113,7 @@ YZTA Datathon 2024 Grup 103 ekibi üyeleri:
 - Mehmet Said Hüseyinoğlu
 - Kadir Akyürek
 - Eda Nur Işık
-- Medine
+- Medine Kaynak
 
 ## Lisans
 
